@@ -118,13 +118,27 @@ h1, h3 {
     justify-content: space-between;
 }
 
-/* Portfolio image wrapper styling */
+/* Individual image wrapper styling */
 .image-wrapper {
     text-align: center;
     margin-bottom: 20px;
     width: calc(33.3333% - 20px); /* Adjusted width calculation for spacing */
     position: relative; /* Make position relative for absolutely positioned details */
     border-radius: 10px; /* Match border-radius of the image */
+    outline: 3px solid transparent; /* Set transparent outline */
+}
+
+/* Add subtle gradient border */
+.image-wrapper:before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Increase top offset for space */
+    left: -10px; /* Increase left offset for space */
+    right: -10px; /* Increase right offset for space */
+    bottom: -10px; /* Increase bottom offset for space */
+    border-radius: 20px; /* Increase border-radius to cover the space */
+    background: radial-gradient(circle, #800080 0%, #8A2BE2 100%); /* Purple radial gradient */
+    z-index: -1; /* Place behind the image */
 }
 
 /* Portfolio image styling */
