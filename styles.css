@@ -47,7 +47,7 @@ header {
 }
 
 .company-name {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 nav ul {
@@ -136,7 +136,7 @@ footer {
 }
 
 .proficiencies ul li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .proficiencies ul li span {
