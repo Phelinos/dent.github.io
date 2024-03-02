@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(-45deg, #6a0080, #1a1a1a);
+    background: linear-gradient(-45deg, #2f2f2f, #171717);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
 }
@@ -23,13 +23,13 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    color: white;
+    color: #fff;
 }
 
 header, footer {
     text-align: center;
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 10px 0;
 }
 
@@ -57,7 +57,7 @@ h1, h2, h3 {
 }
 
 .image-wrapper:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .portfolio-image {
