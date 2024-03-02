@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(-45deg, #2f2f2f, #171717);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
@@ -47,7 +47,7 @@ header {
 }
 
 .company-name {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 nav ul {
@@ -85,7 +85,7 @@ nav ul li a:hover {
 
 h2 {
     margin-top: 40px;
-    font-size: 28px;
+    font-size: 48px;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -136,16 +136,22 @@ footer {
 
 .testimonial-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .testimonials-inner {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    overflow: hidden;
+}
+
+.testimonial {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.testimonial p {
+    color: #fff;
 }
 
 .testimonial-nav {
@@ -162,16 +168,6 @@ footer {
 
 .testimonial-nav span:hover {
     color: #ddd;
-}
-
-.testimonial {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.testimonial p {
-    color: #fff;
 }
 
 .purple-gradient {
