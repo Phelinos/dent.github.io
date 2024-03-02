@@ -1,59 +1,36 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #111;
-    color: #eee;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #222;
-    padding: 20px 0;
+  text-align: center;
+  padding: 20px;
 }
 
-header .profile-img {
-    max-width: 150px;
-    border-radius: 50%;
+.about-section,
+.portfolio-section {
+  padding: 20px;
 }
 
-header h1 {
-    color: #eee;
-    margin-bottom: 10px;
+.gallery {
+  display: flex;
+  justify-content: space-between;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.gallery-item {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.gallery-item img {
+  width: 100%;
+  border-radius: 5px;
 }
 
-nav ul li a {
-    color: #eee;
-    text-decoration: none;
+.gallery-item h3 {
+  margin-top: 10px;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.main-content {
-    padding: 40px 0;
-}
-
-footer {
-    background-color: #222;
-    padding: 10px 0;
-    text-align: center;
-}
