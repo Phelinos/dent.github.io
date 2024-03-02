@@ -97,7 +97,7 @@ h1, h3 {
 
 .image-container {
     display: flex;
-    justify-content: space-between; /* Distribute space between images */
+    justify-content: 5; /* Distribute space between images */
 }
 
 .image-wrapper {
@@ -108,8 +108,8 @@ h1, h3 {
 }
 
 .portfolio-image {
-    width: 100%; /* Ensure images take up full width of their container */
-    height: auto;
+    width: 250px; /* Adjust the width to make the images larger */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
     border-radius: 10px;
     transition: filter 0.3s ease; /* Transition for image filter */
 }
