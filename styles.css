@@ -64,11 +64,11 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 nav ul li a:hover {
-    color: #ddd;
+    color: #aaf;
 }
 
 .about-me {
@@ -85,7 +85,7 @@ nav ul li a:hover {
 
 h2 {
     margin-top: 40px;
-    font-size: 96px;
+    font-size: 200%;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -127,4 +127,24 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+}
+
+.proficiencies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.proficiencies ul li {
+    margin-bottom: 10px;
+}
+
+.proficiencies ul li span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8));
+    transition: background 0.3s ease;
+}
+
+.proficiencies ul li span:hover {
+    background: linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(138, 43, 226, 0.8));
 }
