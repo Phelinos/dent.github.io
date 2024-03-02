@@ -115,7 +115,7 @@ h1, h3 {
 /* Image container styling */
 .image-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: 200px;
 }
 
 /* Individual image wrapper styling */
