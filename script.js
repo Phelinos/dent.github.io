@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const testimonials = document.querySelectorAll(".testimonial");
+    const testimonialBox = document.querySelector(".testimonial-box");
     const prevButton = document.querySelector(".prev");
     const nextButton = document.querySelector(".next");
+    const testimonials = document.querySelectorAll(".testimonial");
 
     let currentTestimonialIndex = 0;
 
