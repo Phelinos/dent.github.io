@@ -173,6 +173,13 @@ footer {
     color: #ddd;
 }
 
+.proficiencies ul {
+    margin-top: 10px;
+}
+
+.proficiencies li {
+    margin-bottom: 5px; /* Adjust this value to increase or decrease spacing */
+}
 
 .purple-gradient {
     background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8));
