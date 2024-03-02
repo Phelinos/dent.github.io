@@ -6,6 +6,39 @@
     <title>Tatio - About Me</title>
     <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="styles.css"> <!-- Keep the link to external stylesheet for other styles -->
+    <style>
+        /* Other styles remain unchanged */
+
+        /* Background styling */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensure the background is behind other content */
+        }
+
+        /* Circle styling */
+        .circle {
+            position: absolute;
+            width: 20px; /* Adjust the size of the circle */
+            height: 20px; /* Adjust the size of the circle */
+            background-color: #800080; /* Purple color */
+            border-radius: 50%; /* Make it a circle */
+            animation: moveCircle 10s linear infinite alternate; /* Animation for moving circles */
+        }
+
+        /* Animation keyframes */
+        @keyframes moveCircle {
+            0% {
+                transform: translate(0, 0); /* Start position */
+            }
+            100% {
+                transform: translate(100vw, 100vh); /* End position */
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,18 +56,23 @@
     </header>
     
     <div class="container">
+        <div class="background">
+            <!-- Circles will be generated here -->
+        </div>
+
         <div class="portrait">
             <img src="portrait.jpg" alt="Portrait" class="portrait-image">
         </div>
+
         <section id="about-me" class="about-me">
             <h2>ABOUT ME</h2>
             <p>I am a passionate and creative individual dedicated to delivering high-quality work in the field of web development. With years of experience, I have honed my skills in HTML, CSS, JavaScript, and more. I thrive in collaborative environments and enjoy taking on new challenges.</p>
         </section>
-        <div class="divider"></div> <!-- Divider between Portrait and About Me -->
 
-            
+        <div class="divider"></div> <!-- Divider between About Me and Portfolio -->
+
         <section id="portfolio" class="portfolio">
-            <h2>PORTFOHEJLIO</h2>
+            <h2>PORTFOLIO</h2>
             <div class="image-container">
                 <div class="image-wrapper">
                     <img src="LithiumChargerPort.png" alt="Red Square Image" class="portfolio-image">
@@ -59,18 +97,19 @@
                 </div>
             </div>
         </section>
-        <div class="divider"></div>
-        
+
+        <div class="divider"></div> <!-- Divider between Portfolio and Proficiencies -->
+
         <section id="proficiencies" class="proficiencies">
             <h2>PROFICIENCIES</h2>
             <ul class="proficiency-list">
-                <li><span>HTML</span></li></p>For making simple functional sites.</p>
-                <li><span>CSS</span></li></p>For styling sites and making them usable to the public</p>
-                <li><span>JavaScript</span></li></p>Adding extra features like animated objects</p>
-                <li><span>PHP</span></li></p>Makes it possible to manage data for login pages and mail systems</p>
-                <li><span>MySQL</span></li></p>Databases allow for cross site functionality.</p>
-                <li><span>React</span></li></p>Useful for making interactive designs</p>
-                <li><span>Node.js</span></li></p>A javascript extension</p>
+                <li><span>HTML</span> - For making simple functional sites.</li>
+                <li><span>CSS</span> - For styling sites and making them usable to the public.</li>
+                <li><span>JavaScript</span> - Adding extra features like animated objects.</li>
+                <li><span>PHP</span> - Makes it possible to manage data for login pages and mail systems.</li>
+                <li><span>MySQL</span> - Databases allow for cross-site functionality.</li>
+                <li><span>React</span> - Useful for making interactive designs.</li>
+                <li><span>Node.js</span> - A JavaScript extension.</li>
             </ul>
         </section>
     </div>
