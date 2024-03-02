@@ -122,7 +122,7 @@ h1, h3 {
 .image-wrapper {
     text-align: center;
     margin-bottom: 20px;
-    width: calc(33.3333% - 20px); /* Adjusted width calculation for spacing */
+    width: calc((100% - 40px - 2 * 100px) / 3); /* Adjusted width calculation for spacing */
 }
 
 /* Portfolio image styling */
@@ -160,15 +160,51 @@ h1, h3 {
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     border-radius: 10px; /* Rounded corners */
     background-color: #333; /* Dark gray background for footer */
-    color: #fff; /* Text color */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Align content horizontally */
+    align-items: center; /* Align content vertically */
+}
+
+/* Footer link styling */
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+.footer-content ul li a:hover {
+    color: #aaf;
+}
+
+/* Copyright text styling */
+.footer-content p {
+    color: #fff;
 }
 
 /* Proficiency item styling */
 .proficiencies ul {
-    list-style-type: none;
+    list-style-type: disc; /* Change to bulletpoint list */
     padding: 0;
 }
 
@@ -189,6 +225,6 @@ footer {
 
 /* Hover effect for proficiency items */
 .proficiencies ul li span:hover {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient on hover */
+    background: linear-gradient(135deg, #891e3d, #8a2be2); /* Adjusted gradient on hover */
     color: #fff; /* Text color on hover */
 }
