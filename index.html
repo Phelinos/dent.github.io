@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatio - About Me</title>
     <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+    <!-- External stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Inline styles for dynamic image size and spacing -->
+    <style>
+        .image-wrapper {
+            width: calc((100% - 40px - 2 * {{ imageSpacing }}px) / 3); /* Calculate width for 3 images with dynamic spacing between them */
+        }
+        .portfolio-image {
+            width: {{ imageSize }}px; /* Set the width of portfolio images dynamically */
+        }
+    </style>
 </head>
 <body>
     <header>
+        <!-- Logo and company name -->
         <div class="logo">
             <img src="favicon.png" alt="Logo">
             <span class="company-name">About me - Dent</span>
         </div>
+        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
@@ -21,14 +33,18 @@
             </ul>
         </nav>
     </header>
+    <!-- Container for main content -->
     <div class="container">
+        <!-- About Me section -->
         <section id="about-me" class="about-me">
             <h2>ABOUT ME</h2>
             <p>I am a passionate and creative individual dedicated to delivering high-quality work in the field of web development. With years of experience, I have honed my skills in HTML, CSS, JavaScript, and more. I thrive in collaborative environments and enjoy taking on new challenges.</p>
         </section>
+        <!-- Portfolio section -->
         <section id="portfolio" class="portfolio">
             <h2>PORTFOLIO</h2>
             <div class="image-container">
+                <!-- Image wrappers with descriptions -->
                 <div class="image-wrapper">
                     <img src="red_square.png" alt="Red Square Image" class="portfolio-image">
                     <div class="image-details">
@@ -52,22 +68,33 @@
                 </div>
             </div>
         </section>
+        <!-- Proficiencies section -->
         <section id="proficiencies" class="proficiencies">
             <h2>PROFICIENCIES</h2>
+            <!-- List of proficiencies -->
             <ul>
-                <li><span>HTML</span></li> <!-- Proficiency -->
-                <li><span>CSS</span></li> <!-- Proficiency -->
-                <li><span>JavaScript</span></li> <!-- Proficiency -->
-                <li><span>PHP</span></li> <!-- Proficiency -->
-                <li><span>MySQL</span></li> <!-- Proficiency -->
-                <li><span>React</span></li> <!-- Proficiency -->
-                <li><span>Node.js</span></li> <!-- Proficiency -->
-                <li><span>And more...</span></li> <!-- Proficiency -->
+                <!-- HTML proficiency with gradient -->
+                <li><span>HTML</span></li>
+                <!-- CSS proficiency with gradient -->
+                <li><span>CSS</span></li>
+                <!-- JavaScript proficiency with gradient -->
+                <li><span>JavaScript</span></li>
+                <!-- PHP proficiency with gradient -->
+                <li><span>PHP</span></li>
+                <!-- MySQL proficiency with gradient -->
+                <li><span>MySQL</span></li>
+                <!-- React proficiency with gradient -->
+                <li><span>React</span></li>
+                <!-- Node.js proficiency with gradient -->
+                <li><span>Node.js</span></li>
+                <!-- And more... proficiency with gradient -->
+                <li><span>And more...</span></li>
             </ul>
         </section>
     </div>
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 My Portfolio</p> <!-- Footer content -->
+        <p>&copy; 2024 My Portfolio</p>
     </footer>
 </body>
 </html>
