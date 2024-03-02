@@ -172,6 +172,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(135deg, #2f2f2f, #171717); /* Footer gradient */
 }
 
 /* Proficiency item styling */
@@ -192,7 +193,40 @@ footer {
 
 /* Gradient for HTML proficiency */
 .proficiencies ul li:nth-child(1) span {
-    background: linear-gradient(135deg, #f00, #00f); /* Red to Blue gradient */
+    background: linear-gradient(135deg, #f00, #00f); /* Red to Blue gradient for HTML */
 }
 
-/*
+/* Gradient for CSS proficiency */
+.proficiencies ul li:nth-child(2) span {
+    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for CSS */
+}
+
+/* Gradient for JavaScript proficiency */
+.proficiencies ul li:nth-child(3) span {
+    background: linear-gradient(135deg, #9932CC, #8A2BE2); /* Purple gradient for JavaScript */
+}
+
+/* Gradient for PHP proficiency */
+.proficiencies ul li:nth-child(4) span {
+    background: linear-gradient(135deg, #9400D3, #8A2BE2); /* Purple gradient for PHP */
+}
+
+/* Gradient for MySQL proficiency */
+.proficiencies ul li:nth-child(5) span {
+    background: linear-gradient(135deg, #8A2BE2, #9932CC); /* Purple gradient for MySQL */
+}
+
+/* Gradient for React proficiency */
+.proficiencies ul li:nth-child(6) span {
+    background: linear-gradient(135deg, #9370DB, #8A2BE2); /* Purple gradient for React */
+}
+
+/* Gradient for Node.js proficiency */
+.proficiencies ul li:nth-child(7) span {
+    background: linear-gradient(135deg, #8A2BE2, #9932CC); /* Purple gradient for Node.js */
+}
+
+/* Gradient for "And more..." proficiency */
+.proficiencies ul li:nth-child(8) span {
+    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for "And more..." */
+}
