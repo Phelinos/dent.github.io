@@ -41,13 +41,13 @@ header {
 }
 
 .logo img {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     margin-right: 10px;
 }
 
 .company-name {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 nav ul {
@@ -85,7 +85,7 @@ nav ul li a:hover {
 
 h2 {
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 28px;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -109,7 +109,7 @@ h1, h2, h3 {
 }
 
 .portfolio-image {
-    width: 200px;
+    width: 240px;
     height: auto;
     border-radius: 10px;
 }
@@ -129,29 +129,23 @@ footer {
     padding: 10px 0;
 }
 
+.testimonials {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
 .testimonial-container {
-    overflow: hidden;
-    position: relative;
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .testimonials-inner {
     display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-.testimonial {
-    flex: 1;
-    padding: 20px;
-    margin: 0 5px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8));
-    opacity: 0.8;
-}
-
-.testimonial p {
-    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .testimonial-nav {
@@ -162,7 +156,7 @@ footer {
 .testimonial-nav span {
     cursor: pointer;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0 10px;
 }
 
@@ -170,12 +164,14 @@ footer {
     color: #ddd;
 }
 
-.proficiencies ul {
-    margin-top: 10px;
+.testimonial {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.proficiencies li {
-    margin-bottom: 10px; /* Adjust this value to increase or decrease spacing */
+.testimonial p {
+    color: #fff;
 }
 
 .purple-gradient {
