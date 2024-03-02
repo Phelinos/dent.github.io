@@ -132,11 +132,11 @@ h1, h3 {
 .image-wrapper:before {
     content: '';
     position: absolute;
-    top: -10px; /* Increase top offset for space */
-    left: -10px; /* Increase left offset for space */
-    right: -10px; /* Increase right offset for space */
-    bottom: -10px; /* Increase bottom offset for space */
-    border-radius: 20px; /* Increase border-radius to cover the space */
+    top: -50px; /* Increase top offset for space */
+    left: -50px; /* Increase left offset for space */
+    right: -50px; /* Increase right offset for space */
+    bottom: -50px; /* Increase bottom offset for space */
+    border-radius: 10px; /* Increase border-radius to cover the space */
     background: radial-gradient(circle, #800080 0%, #8A2BE2 100%); /* Purple radial gradient */
     z-index: -1; /* Place behind the image */
 }
