@@ -122,7 +122,8 @@ h1, h3 {
 .image-wrapper {
     text-align: center;
     margin-bottom: 20px;
-    width: calc((100% - 40px - 2 * 100px) / 3); /* Adjusted width calculation for spacing */
+    width: calc(33.3333% - 20px); /* Adjusted width calculation for spacing */
+    position: relative; /* Make position relative for absolutely positioned details */
 }
 
 /* Portfolio image styling */
@@ -165,66 +166,31 @@ footer {
     background-color: #333; /* Dark gray background for footer */
 }
 
+/* Footer content styling */
 .footer-content {
     display: flex;
-    justify-content: space-between; /* Align content horizontally */
-    align-items: center; /* Align content vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
-/* Footer link styling */
+/* Footer content list styling */
 .footer-content ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-right: 20px; /* Add some space between list and text */
 }
 
 .footer-content ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.footer-content ul li:last-child {
-    margin-right: 0;
+    display: inline-block; /* Display horizontally */
 }
 
 .footer-content ul li a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
     transition: color 0.5s ease;
 }
 
 .footer-content ul li a:hover {
     color: #aaf;
-}
-
-/* Copyright text styling */
-.footer-content p {
-    color: #fff;
-}
-
-/* Proficiency item styling */
-.proficiencies ul {
-    list-style-type: disc; /* Change to bulletpoint list */
-    padding: 0;
-}
-
-.proficiencies ul li {
-    margin-bottom: 15px;
-}
-
-.proficiencies ul li span {
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease; /* Transition for background and text color */
-}
-
-/* Gradient for all proficiencies */
-.proficiencies ul li span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for all proficiencies */
-}
-
-/* Hover effect for proficiency items */
-.proficiencies ul li span:hover {
-    background: linear-gradient(135deg, #891e3d, #8a2be2); /* Adjusted gradient on hover */
-    color: #fff; /* Text color on hover */
 }
