@@ -7,9 +7,7 @@
     <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="styles.css"> <!-- Keep the link to external stylesheet for other styles -->
     <style>
-        /* Other styles remain unchanged */
-
-        /* Background styling */
+        /* Additional styles for the circles */
         .background {
             position: fixed;
             top: 0;
@@ -19,7 +17,6 @@
             z-index: -1; /* Ensure the background is behind other content */
         }
 
-        /* Circle styling */
         .circle {
             position: absolute;
             width: 20px; /* Adjust the size of the circle */
@@ -42,17 +39,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="favicon.png" alt="Logo">
-            <span class="company-name">About me - Dent</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#proficiencies">Proficiencies</a></li>
-            </ul>
-        </nav>
+        <!-- Header content -->
     </header>
     
     <div class="container">
@@ -60,69 +47,26 @@
             <!-- Circles will be generated here -->
         </div>
 
-        <div class="portrait">
-            <img src="portrait.jpg" alt="Portrait" class="portrait-image">
-        </div>
+        <!-- Rest of your content -->
 
-        <section id="about-me" class="about-me">
-            <h2>ABOUT ME</h2>
-            <p>I am a passionate and creative individual dedicated to delivering high-quality work in the field of web development. With years of experience, I have honed my skills in HTML, CSS, JavaScript, and more. I thrive in collaborative environments and enjoy taking on new challenges.</p>
-        </section>
-
-        <div class="divider"></div> <!-- Divider between About Me and Portfolio -->
-
-        <section id="portfolio" class="portfolio">
-            <h2>PORTFrrOLIO</h2>
-            <div class="image-container">
-                <div class="image-wrapper">
-                    <img src="LithiumChargerPort.png" alt="Red Square Image" class="portfolio-image">
-                    <div class="image-details">
-                        <h3>Lithium charger</h3>
-                        <p>A battery charger for lithium batteries.</p>
-                    </div>
-                </div>
-                <div class="image-wrapper">
-                    <img src="MotionAlarmPort.png" alt="Red Square Image" class="portfolio-image">
-                    <div class="image-details">
-                        <h3>Motion Alarm</h3>
-                        <p>A simple motion alarm that detects movement.</p>
-                    </div>
-                </div>
-                <div class="image-wrapper">
-                    <img src="WifiPassPort.png" alt="Red Square Image" class="portfolio-image">
-                    <div class="image-details">
-                        <h3>WiFi password display</h3>
-                        <p>Displays the wifi password of your home beautifully.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider"></div> <!-- Divider between Portfolio and Proficiencies -->
-
-        <section id="proficiencies" class="proficiencies">
-            <h2>PROFICIENCIES</h2>
-            <ul class="proficiency-list">
-                <li><span>HTML</span> - For making simple functional sites.</li>
-                <li><span>CSS</span> - For styling sites and making them usable to the public.</li>
-                <li><span>JavaScript</span> - Adding extra features like animated objects.</li>
-                <li><span>PHP</span> - Makes it possible to manage data for login pages and mail systems.</li>
-                <li><span>MySQL</span> - Databases allow for cross-site functionality.</li>
-                <li><span>React</span> - Useful for making interactive designs.</li>
-                <li><span>Node.js</span> - A JavaScript extension.</li>
-            </ul>
-        </section>
     </div>
 
     <footer>
-        <div class="footer-content">
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <p>&copy; 2024 My Portfolio</p>
-        </div>
+        <!-- Footer content -->
     </footer>
+
+    <script>
+        // Generate circles and append them to the background
+        const background = document.querySelector('.background');
+
+        for (let i = 0; i < 10; i++) { // Change the number of circles as needed
+            const circle = document.createElement('div');
+            circle.classList.add('circle');
+            circle.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+            circle.style.top = `${Math.random() * 100}vh`; // Random vertical position
+            circle.style.animationDuration = `${Math.random() * 3 + 2}s`; // Random animation duration
+            background.appendChild(circle);
+        }
+    </script>
 </body>
 </html>
