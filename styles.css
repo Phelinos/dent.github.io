@@ -1,14 +1,12 @@
-/* Apply basic styles to the entire body */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(-45deg, #2f2f2f, #171717); /* Background gradient */
-    background-size: 400% 400%; /* Background size for gradient animation */
-    animation: gradientAnimation 15s ease infinite; /* Animation for gradient */
+    background: linear-gradient(-45deg, #2f2f2f, #171717);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
 }
 
-/* Keyframes for the gradient animation */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -21,164 +19,126 @@ body {
     }
 }
 
-/* Container to hold the main content */
 .container {
-    max-width: 800px; /* Maximum width of the content */
-    margin: 0 auto; /* Center align the container */
-    padding: 20px; /* Add padding around the content */
-    color: #fff; /* Text color */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
 }
 
-/* Styles for the header section */
 header {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between elements */
-    align-items: center; /* Align items vertically */
-    padding: 10px 20px; /* Padding for header */
-    background-color: #333; /* Background color */
-    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-/* Styles for the logo */
 .logo {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
+    display: flex;
+    align-items: center;
 }
 
-/* Styles for the logo image */
 .logo img {
-    width: 40px; /* Width of the logo image */
-    height: 40px; /* Height of the logo image */
-    margin-right: 10px; /* Margin between logo and text */
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
-/* Styles for the company name */
 .company-name {
-    font-size: 20px; /* Font size of the company name */
-    font-family: 'Bebas Neue'; /* Custom font family */
+    font-size: 20px;
+    font-family: 'Bebas Neue';
 }
 
-/* Styles for the navigation */
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Use flexbox for layout */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-/* Styles for navigation items */
 nav ul li {
-    margin-right: 20px; /* Margin between navigation items */
+    margin-right: 20px;
 }
 
-/* Styles for navigation links */
 nav ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* Text color */
-    transition: color 0.5s ease; /* Transition effect for color change */
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s ease;
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
-    color: #aaf; /* Hover color */
+    color: #aaf;
 }
 
-/* Styles for the about me section */
 .about-me {
-    margin-bottom: 40px; /* Margin at the bottom */
+    margin-bottom: 40px;
 }
 
-/* Styles for the portfolio section */
 .portfolio {
-    margin-bottom: 40px; /* Margin at the bottom */
+    margin-bottom: 40px;
 }
 
-/* Styles for the proficiencies section */
 .proficiencies {
-    margin-bottom: 40px; /* Margin at the bottom */
+    margin-bottom: 40px;
 }
 
-/* Styles for heading elements */
 h2 {
-    margin-top: 40px; /* Margin at the top */
-    font-size: 40px; /* Font size */
-    font-family: 'Bebas Neue'; /* Custom font family */
-    text-align: center; /* Center align text */
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    text-align: center;
 }
 
-/* Additional heading styles */
 h1, h3 {
-    text-align: center; /* Center align text */
+    text-align: center;
 }
 
-/* Styles for the image container */
 .image-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-around; /* Evenly space items */
+    display: flex;
+    justify-content: space-around;
 }
 
-/* Styles for the image wrapper */
 .image-wrapper {
-    text-align: center; /* Center align text */
-    margin-bottom: 20px; /* Margin at the bottom */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; /* Position relative for absolute positioning of text */
+    width: 200px; /* Width of image wrapper */
 }
 
-/* Set the margin between images */
-.image-wrapper:not(:last-child) {
-    margin-right: 200px; /* Margin between images */
-    /* Adjust the value (20px) as per your preference */
-}
-
-/* Hover effect for image wrapper */
-.image-wrapper:hover {
-    transform: scale(1.05); /* Scale up on hover */
-}
-
-/* Styles for portfolio images */
 .portfolio-image {
-    width: 200px; /* Width of portfolio images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners */
+    width: 100%; /* Ensure images take up full width of their container */
+    height: auto;
+    border-radius: 10px;
+    transition: filter 0.3s ease; /* Transition for image filter */
 }
 
-/* Styles for image details */
 .image-details {
-    margin-top: 10px; /* Margin at the top */
-}
-
-/* Styles for image details heading */
-.image-details h3 {
-    margin-bottom: 5px; /* Margin at the bottom */
-}
-
-/* Styles for the footer */
-footer {
-    text-align: center; /* Center align text */
-    background-color: #333; /* Background color */
+    position: absolute; /* Position absolute to overlay on the image */
+    top: 50%; /* Align at vertical center */
+    left: 50%; /* Align at horizontal center */
+    transform: translate(-50%, -50%); /* Center the details */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px; /* Padding for the details */
     color: #fff; /* Text color */
-    padding: 10px 0; /* Padding top and bottom */
-}
-
-/* Styles for proficiency list */
-.proficiencies ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-}
-
-/* Styles for proficiency list items */
-.proficiencies ul li {
-    margin-bottom: 15px; /* Margin at the bottom */
-}
-
-/* Styles for proficiency spans */
-.proficiencies ul li span {
-    padding: 5px 10px; /* Padding */
     border-radius: 5px; /* Rounded corners */
-    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8)); /* Background gradient */
-    transition: background 0.3s ease; /* Transition effect for background */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Transition for opacity */
 }
 
-/* Hover effect for proficiency spans */
-.proficiencies ul li span:hover {
-    background: linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(138, 43, 226, 0.8)); /* Hover background gradient */
+.image-description {
+    display: none; /* Initially hidden */
+}
+
+.image-wrapper:hover .image-details {
+    opacity: 1; /* Show details on hover */
+}
+
+.image-wrapper:hover .portfolio-image {
+    filter: brightness(70%); /* Darken image on hover */
+}
+
+.image-wrapper:hover .image-description {
+    display: block; /* Show description on hover */
 }
