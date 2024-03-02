@@ -228,3 +228,8 @@ footer {
     background: linear-gradient(135deg, #891e3d, #8a2be2); /* Adjusted gradient on hover */
     color: #fff; /* Text color on hover */
 }
+
+.Divider {
+    width: 50px; /* Ensure images take up full width of their container */
+    height: auto;
+}
