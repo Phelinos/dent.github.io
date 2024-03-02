@@ -56,7 +56,7 @@ header {
 }
 
 .company-name {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Bebas Neue';
 }
 
@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 /* About Me section styling */
 .about-me {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 /* Portfolio section styling */
