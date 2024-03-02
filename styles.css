@@ -2,8 +2,23 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(-45deg, #2f2f2f, #171717);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header {
@@ -17,6 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999; /* Ensure header stays on top */
 }
 
 .logo {
@@ -102,4 +118,24 @@ h1, h3 {
 
 .image-wrapper {
     text-align: center;
-    margin-bottom: 20
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-details {
+    margin-top: 10px;
+}
+
+.image-details h3 {
+    margin-bottom: 5px;
+}
