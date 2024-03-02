@@ -128,8 +128,8 @@ h1, h3 {
 
 /* Portfolio image styling */
 .portfolio-image {
-    width: 100%; /* Ensure images take up full width of their container */
-    height: auto;
+    width: 250px; /* Ensure images take up full width of their container */
+    height: 250px;
     border-radius: 10px;
     transition: filter 0.3s ease; /* Transition for image filter */
 }
