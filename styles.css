@@ -135,15 +135,10 @@ footer {
     margin-top: 20px;
 }
 
-.testimonial-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
 .testimonials-inner {
     display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
 .testimonial {
@@ -151,6 +146,8 @@ footer {
     padding: 20px;
     margin: 0 5px;
     border-radius: 10px;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8));
+    opacity: 0.8;
 }
 
 .testimonial p {
