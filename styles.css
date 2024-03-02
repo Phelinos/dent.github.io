@@ -85,7 +85,7 @@ nav ul li a:hover {
 
 h2 {
     margin-top: 40px;
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Bebas Neue';
     text-align: center;
 }
@@ -136,7 +136,7 @@ footer {
 }
 
 .proficiencies ul li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .proficiencies ul li span {
