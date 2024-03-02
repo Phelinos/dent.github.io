@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatio - About Me</title>
     <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
-    <link rel="stylesheet" href="styles.css"> <!-- Keep the link to external stylesheet for other styles -->
     <style>
-        /* Additional styles for the circles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Background styling */
         .background {
             position: fixed;
             top: 0;
@@ -17,6 +22,7 @@
             z-index: -1; /* Ensure the background is behind other content */
         }
 
+        /* Circle styling */
         .circle {
             position: absolute;
             width: 20px; /* Adjust the size of the circle */
@@ -39,7 +45,20 @@
 </head>
 <body>
     <header>
-        <!-- Header content -->
+        <!-- Header content goes here -->
+        <div class="logo">
+            <!-- Your logo goes here -->
+            <img src="favicon.png" alt="Logo">
+            <span class="company-name">About me - Dent</span>
+        </div>
+        <nav>
+            <!-- Your navigation menu goes here -->
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#proficiencies">Proficiencies</a></li>
+            </ul>
+        </nav>
     </header>
     
     <div class="container">
@@ -47,14 +66,54 @@
             <!-- Circles will be generated here -->
         </div>
 
-        <!-- Rest of your content -->
+        <section id="about-me" class="about-me">
+            <!-- Your About Me content goes here -->
+            <h2>About Me</h2>
+            <p>I am a passionate and creative individual dedicated to delivering high-quality work in the field of web development. With years of experience, I have honed my skills in HTML, CSS, JavaScript, and more. I thrive in collaborative environments and enjoy taking on new challenges.</p>
+        </section>
 
+        <section id="portfolio" class="portfolio">
+            <!-- Your Portfolio content goes here -->
+            <h2>Portfolio</h2>
+            <div class="image-container">
+                <!-- Your portfolio images go here -->
+                <div class="image-wrapper">
+                    <img src="LithiumChargerPort.png" alt="Lithium charger" class="portfolio-image">
+                    <div class="image-details">
+                        <h3>Lithium charger</h3>
+                        <p>A battery charger for lithium batteries.</p>
+                    </div>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </section>
+
+        <section id="proficiencies" class="proficiencies">
+            <!-- Your Proficiencies content goes here -->
+            <h2>Proficiencies</h2>
+            <ul class="proficiency-list">
+                <!-- Your proficiency list items go here -->
+                <li><span>HTML</span> For creating structured web pages.</li>
+                <li><span>CSS</span> For styling web pages.</li>
+                <li><span>JavaScript</span> For adding interactivity to web pages.</li>
+                <!-- Add more proficiency items as needed -->
+            </ul>
+        </section>
     </div>
 
     <footer>
-        <!-- Footer content -->
+        <!-- Your footer content goes here -->
+        <div class="footer-content">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
     </footer>
 
+    <!-- JavaScript for generating circles -->
     <script>
         // Generate circles and append them to the background
         const background = document.querySelector('.background');
