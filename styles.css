@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(-45deg, #094e20, #047e35, #07ae49, #09de5e);
+    background: linear-gradient(-45deg, #6a0080, #1a1a1a);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
 }
@@ -24,6 +24,13 @@ body {
     margin: 0 auto;
     padding: 20px;
     color: white;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
 .about-me {
@@ -65,4 +72,10 @@ h1, h2, h3 {
 
 .image-details h3 {
     margin-bottom: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
