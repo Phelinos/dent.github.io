@@ -17,7 +17,107 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #2f2f2f, #171717);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 16px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.about-me {
+    margin-bottom: 40px;
+}
+
+.portfolio {
+    margin-bottom: 40px;
+}
+
+.previous-jobs, .proficiencies {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-wrapper {
+   
+
 
 .container {
     max-width: 800px;
