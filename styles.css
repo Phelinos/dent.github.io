@@ -279,5 +279,5 @@ footer {
     height: 10px;
     border-radius: 50%;
     background-color: rgba(138, 43, 226, 0.5); /* Purple with opacity */
-    animation: moveCircles calc(random() * 10s) ease-in-out infinite; /* Random duration */
+    animation: moveCircles linear infinite; /* Linear animation for continuous movement */
 }
