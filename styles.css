@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 /* About Me section styling */
 .about-me {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 /* Portfolio section styling */
@@ -230,7 +230,7 @@ footer {
 }
 
 .divider {
-  width: 100%;
+  width: 300%;
   height: 100px; /* Adjust the height of the divider */
   background-image: url('Divider.png'); /* Path to your divider image */
   background-repeat: no-repeat;
