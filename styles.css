@@ -104,7 +104,7 @@ h1, h3 {
     text-align: center;
     margin-bottom: 20px;
     position: relative; /* Position relative for absolute positioning of text */
-    width: 200px; /* Width of image wrapper */
+    width: 500px; /* Width of image wrapper */
 }
 
 .portfolio-image {
