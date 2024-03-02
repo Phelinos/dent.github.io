@@ -21,11 +21,6 @@ header {
     z-index: 999; /* Ensure header stays on top */
 }
 
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -53,4 +48,38 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto 20px auto; /* Adjusted margin-top */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #fff; /* Changed text color */
+    background: linear-gradient(to right, #9c27b0, #673ab7); /* Gradient purple */
+    display: inline-block; /* To contain the gradient within the text */
+    padding: 5px 10px; /* Added padding for better appearance */
+    border-radius: 5px; /* Added border radius for better appearance */
+}
+
+h2:hover {
+    background: linear-gradient(to right, #673ab7, #9c27b0); /* Reverse gradient on hover */
+}
+
+h1, h3 {
+    text-align: center;
+    color: #fff; /*
