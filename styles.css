@@ -143,6 +143,7 @@ footer {
     flex: 1;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
 .testimonial p {
@@ -163,4 +164,11 @@ footer {
 
 .testimonial-nav span:hover {
     color: #ddd;
+}
+
+.purple-gradient {
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8));
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 0 3px;
 }
