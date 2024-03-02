@@ -115,14 +115,14 @@ h1, h3 {
 /* Image container styling */
 .image-container {
     display: flex;
-    justify-content: 200px;
+    justify-content: space-between;
 }
 
 /* Individual image wrapper styling */
 .image-wrapper {
     text-align: center;
     margin-bottom: 20px;
-    position: relative; /* Position relative for absolute positioning of text */
+    width: calc((100% - 200px) / 3); /* Adjusted width calculation for spacing */
 }
 
 /* Portfolio image styling */
@@ -131,6 +131,11 @@ h1, h3 {
     height: auto;
     border-radius: 10px;
     transition: filter 0.3s ease; /* Transition for image filter */
+}
+
+/* Darken image on hover */
+.image-wrapper:hover .portfolio-image {
+    filter: brightness(70%);
 }
 
 /* Image details styling */
@@ -147,24 +152,9 @@ h1, h3 {
     transition: opacity 0.3s ease; /* Transition for opacity */
 }
 
-/* Image description styling */
-.image-description {
-    display: none; /* Initially hidden */
-}
-
 /* Show image details on hover */
 .image-wrapper:hover .image-details {
     opacity: 1;
-}
-
-/* Darken image on hover */
-.image-wrapper:hover .portfolio-image {
-    filter: brightness(70%);
-}
-
-/* Show image description on hover */
-.image-wrapper:hover .image-description {
-    display: block;
 }
 
 /* Footer styling */
@@ -191,48 +181,12 @@ footer {
     transition: background 0.3s ease, color 0.3s ease; /* Transition for background and text color */
 }
 
-/* Gradient for HTML proficiency */
-.proficiencies ul li:nth-child(1) span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for HTML */
-}
-
-/* Gradient for CSS proficiency */
-.proficiencies ul li:nth-child(2) span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for CSS */
-}
-
-/* Gradient for JavaScript proficiency */
-.proficiencies ul li:nth-child(3) span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for JavaScript */
-}
-
-/* Gradient for PHP proficiency */
-.proficiencies ul li:nth-child(4) span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for PHP */
-}
-
-/* Gradient for MySQL proficiency */
-.proficiencies ul li:nth-child(5) span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for MySQL */
-}
-
-/* Gradient for React proficiency */
-.proficiencies ul li:nth-child(6) span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for React */
-}
-
-/* Gradient for Node.js proficiency */
-.proficiencies ul li:nth-child(7) span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for Node.js */
-}
-
-/* Gradient for "And more..." proficiency */
-.proficiencies ul li:nth-child(8) span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for "And more..." */
+/* Gradient for all proficiencies */
+.proficiencies ul li span {
+    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for all proficiencies */
 }
 
 /* Hover effect for proficiency items */
 .proficiencies ul li span:hover {
-    background: linear-gradient(135deg, #8A2BE2, #800080); /* Purple gradient on hover */
-    color: #fff; /* Text color on hover */
+    background: linear-gradient(135deg, #8A2B0A, #8A2BE2); /* Adjusted gradient on hover */
 }
