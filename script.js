@@ -1,27 +1,17 @@
-<script>
-    // Generate circles and append them to the background
-    const background = document.querySelector('.background');
+// Function to generate a random number between min and max
+function getRandom(min, max) {
+    return Math.random() * (max - min) + min;
+}
 
-    const numberOfCircles = 10; // Change the number of circles here
-    const minSize = 50; // Minimum size of the circle in pixels
-    const maxSize = 200; // Maximum size of the circle in pixels
+// Function to create a circle element
+function createCircle() {
+    const circle = document.createElement('div');
+    circle.classList.add('circle');
+    circle.style.left = getRandom(0, window.innerWidth) + 'px';
+    circle.style.top = getRandom(0, window.innerHeight) + 'px';
+    circle.style.animationDuration = getRandom(2, 6) + 's'; // Random duration between 2s and 6s
+    document.getElementById('circles-container').appendChild(circle);
+}
 
-    for (let i = 0; i < numberOfCircles; i++) {
-        const circle = document.createElement('div');
-        circle.classList.add('circle');
-        
-        // Randomize position
-        circle.style.left = `${Math.random() * 100}vw`; // Random horizontal position
-        circle.style.top = `${Math.random() * 100}vh`; // Random vertical position
-        
-        // Randomize size
-        const size = Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize;
-        circle.style.width = `${size}px`;
-        circle.style.height = `${size}px`;
-        
-        // Randomize animation duration
-        circle.style.animationDuration = `${Math.random() * 3 + 2}s`; // Random animation duration
-
-        background.appendChild(circle);
-    }
-</script>
+// Create circles at regular intervals
+setInterval(createCircle, 2000); // Create a new circle every 2 seconds
