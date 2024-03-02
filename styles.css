@@ -85,6 +85,8 @@ nav ul li a:hover {
 
 h2 {
     margin-top: 40px;
+    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 h1, h2, h3 {
@@ -130,8 +132,6 @@ footer {
 .testimonials {
     padding: 20px;
     margin-bottom: 40px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8));
 }
 
 .testimonial-container {
@@ -139,10 +139,13 @@ footer {
     justify-content: space-around;
 }
 
-.testimonial {
+.testimonial-box {
     flex: 1;
+}
+
+.testimonial {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px;
     border-radius: 10px;
 }
 
@@ -171,4 +174,8 @@ footer {
     padding: 2px 5px;
     border-radius: 5px;
     margin: 0 3px;
+}
+
+.purple-gradient:hover {
+    background: linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(138, 43, 226, 0.8));
 }
