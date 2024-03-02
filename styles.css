@@ -230,6 +230,7 @@ footer {
 }
 
 .Divider {
-    width: 50px; /* Ensure images take up full width of their container */
+    width: 10px; /* Ensure images take up full width of their container */
     height: auto;
+    align-items: center;
 }
