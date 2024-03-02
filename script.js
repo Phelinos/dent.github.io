@@ -8,8 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function showTestimonial(index) {
         testimonials.forEach((testimonial, i) => {
             testimonial.style.display = "none";
-            testimonial.style.opacity = (i === index) ? 1 : 0.8;
+            testimonial.style.opacity = 0.8;
         });
+        testimonials[index].style.display = "block";
+        testimonials[index].style.opacity = 1;
     }
 
     function nextTestimonial() {
