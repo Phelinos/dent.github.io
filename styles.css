@@ -231,6 +231,9 @@ footer {
 
 .divider {
   width: 100%;
-  height: 10px; /* Adjust height as needed */
-  background-image: url('Divider.png');
+  height: 10px; /* Adjust the height of the divider */
+  background-image: url('Divider.png'); /* Path to your divider image */
+  background-repeat: no-repeat;
+  background-size: contain; /* Ensure the whole image fits within the element */
+  background-position: center; /* Center the image horizontally */
 }
