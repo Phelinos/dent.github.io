@@ -237,3 +237,16 @@ footer {
   background-size: contain; /* Ensure the whole image fits within the element */
   background-position: center; /* Center the image horizontally */
 }
+
+.portrait {
+  text-align: center; /* Center the image */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.portrait-image {
+  border-radius: 50%; /* Makes the image round */
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
