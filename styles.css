@@ -82,9 +82,6 @@ nav ul li a:hover {
 
 .proficiencies {
     margin-bottom: 40px;
-    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8)); /* Gradient for proficiencies */
-    padding: 20px; /* Added padding to see gradient */
-    border-radius: 10px; /* Added border-radius for gradient */
 }
 
 h2 {
@@ -100,7 +97,7 @@ h1, h3 {
 
 .image-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribute space between images */
 }
 
 .image-wrapper {
@@ -111,7 +108,7 @@ h1, h3 {
 }
 
 .portfolio-image {
-    width: 100%; /* Ensure images take up full width of their container */
+    width: 150px; /* Ensure images take up full width of their container */
     height: auto;
     border-radius: 10px;
     transition: filter 0.3s ease; /* Transition for image filter */
@@ -144,12 +141,4 @@ h1, h3 {
 
 .image-wrapper:hover .image-description {
     display: block; /* Show description on hover */
-}
-
-footer {
-    text-align: center;
-    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8)); /* Gradient for footer */
-    color: #fff;
-    padding: 10px 0;
-    border-radius: 10px; /* Added border-radius for gradient */
 }
