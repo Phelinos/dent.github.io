@@ -3,8 +3,8 @@
     const background = document.querySelector('.background');
 
     const numberOfCircles = 10; // Change the number of circles here
-    const minSize = 10; // Minimum size of the circle in pixels
-    const maxSize = 30; // Maximum size of the circle in pixels
+    const minSize = 50; // Minimum size of the circle in pixels
+    const maxSize = 200; // Maximum size of the circle in pixels
 
     for (let i = 0; i < numberOfCircles; i++) {
         const circle = document.createElement('div');
