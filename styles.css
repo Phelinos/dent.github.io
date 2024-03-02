@@ -121,8 +121,12 @@ h1, h3 {
 .image-wrapper {
     text-align: center; /* Center align text */
     margin-bottom: 20px; /* Margin at the bottom */
-    margin-right: 0px; /* Margin between images */
-    transition: all 0.3s ease; /* Transition effect for hover */
+}
+
+/* Set the margin between images */
+.image-wrapper:not(:last-child) {
+    margin-right: 5px; /* Margin between images */
+    /* Adjust the value (20px) as per your preference */
 }
 
 /* Hover effect for image wrapper */
