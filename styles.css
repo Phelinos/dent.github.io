@@ -85,7 +85,7 @@ nav ul li a:hover {
 
 h2 {
     margin-top: 40px;
-    font-size: 32px;
+    font-size: 36px; /* Increased title size */
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -173,7 +173,7 @@ footer {
     background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8));
     padding: 2px 5px;
     border-radius: 5px;
-    margin: 0 3px;
+    margin: 5px 3px; /* Added spacing */
 }
 
 .purple-gradient:hover {
