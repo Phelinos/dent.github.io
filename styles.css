@@ -125,7 +125,7 @@ h1, h3 {
 
 /* Set the margin between images */
 .image-wrapper:not(:last-child) {
-    margin-right: 5px; /* Margin between images */
+    margin-right: 100px; /* Margin between images */
     /* Adjust the value (20px) as per your preference */
 }
 
