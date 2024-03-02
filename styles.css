@@ -97,14 +97,14 @@ h1, h3 {
 
 .image-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Distribute space between images */
 }
 
 .image-wrapper {
     text-align: center;
     margin-bottom: 20px;
     position: relative; /* Position relative for absolute positioning of text */
-    width: 100px; /* Width of image wrapper */
+    width: calc((100% - 40px) / 3); /* Calculate width for 3 images with 20px margin between them */
 }
 
 .portfolio-image {
