@@ -1,31 +1,15 @@
-/* Reset default styles */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-/* Background gradient animation */
 body {
     background: linear-gradient(-45deg, #2f2f2f, #171717);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
 }
 
-/* Animation keyframes */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Container for central content */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -33,17 +17,15 @@ body {
     color: #fff;
 }
 
-/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333; /* Dark gray background */
+    background-color: #333;
     color: #fff;
 }
 
-/* Logo styling */
 .logo {
     display: flex;
     align-items: center;
@@ -60,7 +42,6 @@ header {
     font-family: 'Bebas Neue';
 }
 
-/* Navigation styling */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -82,25 +63,21 @@ nav ul li a:hover {
     color: #aaf;
 }
 
-/* About Me section styling */
 .about-me {
     margin-bottom: 70px;
 }
 
-/* Portfolio section styling */
 .portfolio {
     margin-bottom: 40px;
     margin-top: 50px;
 }
 
-/* Proficiencies section styling */
 .proficiencies {
     margin-bottom: 40px;
-    padding: 20px; /* Add padding for better spacing */
-    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Header for each section */
 h2 {
     margin-top: 40px;
     font-size: 40px;
@@ -108,89 +85,78 @@ h2 {
     text-align: center;
 }
 
-/* Center alignment for headings */
 h1, h3 {
     text-align: center;
 }
 
-/* Image container styling */
 .image-container {
     display: flex;
     justify-content: space-between;
 }
 
-/* Individual image wrapper styling */
 .image-wrapper {
     text-align: center;
     margin-bottom: 20px;
-    width: calc(33.3333% - 20px); /* Adjusted width calculation for spacing */
-    position: relative; /* Make position relative for absolutely positioned details */
-    outline: 3px solid transparent; /* Set transparent outline */
+    width: calc(33.3333% - 20px);
+    position: relative;
+    outline: 3px solid transparent;
 }
 
-/* Add subtle gradient border */
 .image-wrapper:before {
     content: '';
     position: absolute;
 }
 
-/* Portfolio image styling */
 .portfolio-image {
-    width: 250px; /* Ensure images take up full width of their container */
+    width: 250px;
     height: 250px;
     border-radius: 10px;
-    transition: filter 0.3s ease; /* Transition for image filter */
+    transition: filter 0.3s ease;
 }
 
-/* Darken image on hover */
 .image-wrapper:hover .portfolio-image {
     filter: brightness(70%);
 }
 
-/* Image details styling */
 .image-details {
-    position: absolute; /* Position absolute to overlay on the image */
-    top: 50%; /* Align at vertical center */
-    left: 50%; /* Align at horizontal center */
-    transform: translate(-50%, -50%); /* Center the details */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 10px; /* Padding for the details */
-    color: #fff; /* Text color */
-    border-radius: 5px; /* Rounded corners */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Transition for opacity */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-/* Show image details on hover */
 .image-wrapper:hover .image-details {
     opacity: 1;
 }
 
-/* Footer styling */
 footer {
     text-align: center;
     padding: 10px 0;
-    border-radius: 10px; /* Rounded corners */
-    background-color: #333; /* Dark gray background for footer */
+    border-radius: 10px;
+    background-color: #333;
 }
 
-/* Footer content styling */
 .footer-content {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Footer content list styling */
 .footer-content ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-right: 20px; /* Add some space between list and text */
+    margin-right: 20px;
 }
 
 .footer-content ul li {
-    display: inline-block; /* Display horizontally */
+    display: inline-block;
 }
 
 .footer-content ul li a {
@@ -203,9 +169,8 @@ footer {
     color: #aaf;
 }
 
-/* Proficiency item styling */
 .proficiencies ul {
-    list-style-type: disc; /* Change to bulletpoint list */
+    list-style-type: disc;
     padding: 0;
 }
 
@@ -216,41 +181,34 @@ footer {
 .proficiencies ul li span {
     padding: 5px 10px;
     border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease; /* Transition for background and text color */
+    transition: background 0.3s ease, color 0.3s ease;
+    background: linear-gradient(135deg, #800080, #8A2BE2);
 }
 
-/* Gradient for all proficiencies */
-.proficiencies ul li span {
-    background: linear-gradient(135deg, #800080, #8A2BE2); /* Purple gradient for all proficiencies */
-}
-
-/* Hover effect for proficiency items */
 .proficiencies ul li span:hover {
-    background: linear-gradient(135deg, #891e3d, #8a2be2); /* Adjusted gradient on hover */
-    color: #fff; /* Text color on hover */
+    background: linear-gradient(135deg, #891e3d, #8a2be2);
+    color: #fff;
 }
 
-/* Divider styling */
 .divider {
-  width: 100%;
-  height: 100px; /* Adjust the height of the divider */
-  background-image: url('Divider.png'); /* Path to your divider image */
-  background-repeat: no-repeat;
-  background-size: contain; /* Ensure the whole image fits within the element */
-  background-position: center; /* Center the image horizontally */
+    width: 100%;
+    height: 100px;
+    background-image: url('Divider.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-/* Portrait styling */
 .portrait {
-  text-align: center; /* Center the image */
-  margin-bottom: 20px; /* Adjust margin as needed */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .portrait-image {
-  border-radius: 50%; /* Makes the image round */
-  width: 200px; /* Adjust width as needed */
-  height: 200px; /* Adjust height as needed */
-  object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .background {
@@ -259,25 +217,23 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Ensure the background is behind other content */
+    z-index: -1;
 }
 
-/* Add animation for moving circles */
 @keyframes moveCircles {
     from {
         transform: translate(0, 0);
     }
     to {
-        transform: translate(100vw, 100vh); /* Circles move from top-left to bottom-right corner */
+        transform: translate(100vw, 100vh);
     }
 }
 
-/* Style for circles */
 .circle {
     position: absolute;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgba(138, 43, 226, 0.5); /* Purple with opacity */
-    animation: moveCircles linear infinite; /* Linear animation for continuous movement */
+    background-color: rgba(138, 43, 226, 0.5);
+    animation: moveCircles linear infinite;
 }
