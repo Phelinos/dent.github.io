@@ -234,6 +234,6 @@ footer {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgba(138, 43, 226, 0.5);
+    background-color: rgba(0, 43, 0, 0.5);
     animation: moveCircles linear infinite;
 }
