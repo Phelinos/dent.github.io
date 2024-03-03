@@ -22,4 +22,4 @@ function createCircle(minSize, maxSize, minSpeed, maxSpeed) {
 }
 
 // Initial call to start creating circles with specific parameters
-createCircle(10, 30, 2, 6); // Example parameters: minSize = 10px, maxSize = 30px, minSpeed = 2s, maxSpeed = 6s
+createCircle(100, 200, 2, 6); // Example parameters: minSize = 10px, maxSize = 30px, minSpeed = 2s, maxSpeed = 6s
