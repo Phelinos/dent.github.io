@@ -268,7 +268,7 @@ footer {
         transform: translate(0, 0);
     }
     to {
-        transform: translate(calc(random() * 100vw), calc(random() * 100vh)); /* Randomly move within the viewport */
+        transform: translate(100vw, 100vh); /* Circles move from top-left to bottom-right corner */
     }
 }
 
