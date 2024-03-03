@@ -222,10 +222,10 @@ footer {
 
 @keyframes moveCircles {
     from {
-        transform: translate(0, 0);
+        transform: translate(-10px, -10px); /* Start from slightly outside the top-left corner */
     }
     to {
-        transform: translate(100vw, 100vh);
+        transform: translate(calc(100vw + 10px), calc(100vh + 10px)); /* Move to slightly outside the bottom-right corner */
     }
 }
 
